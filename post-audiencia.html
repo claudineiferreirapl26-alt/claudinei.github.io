@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Como construir audiência com propósito | Claudinei</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --verde: #009C3B; --amarelo: #FFDF00; --azul: #002776; --azul-escuro: #001A55; --cinza-claro: #f5f5f0; --cinza-texto: #555; --radius: 12px; }
+    body { font-family: 'Barlow', sans-serif; background: var(--cinza-claro); color: #222; line-height: 1.7; }
+    a { text-decoration: none; color: inherit; }
+    nav { background: var(--azul); position: sticky; top: 0; z-index: 100; border-bottom: 3px solid var(--amarelo); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+    .nav-logo-c { width: 38px; height: 38px; border-radius: 50%; background: var(--amarelo); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--azul); }
+    .nav-nome { color: #fff; font-size: 15px; font-weight: 500; letter-spacing: 3px; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.7); font-size: 13px; letter-spacing: 1px; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--amarelo); }
+    .post-hero { background: var(--azul); padding: 4rem 2rem 3rem; position: relative; overflow: hidden; border-bottom: 6px solid var(--amarelo); }
+    .post-hero::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: var(--verde); }
+    .post-hero-inner { max-width: 800px; margin: 0 auto; position: relative; }
+    .post-category { display: inline-block; background: var(--verde); color: var(--amarelo); font-size: 11px; letter-spacing: 3px; font-weight: 600; padding: 5px 16px; border-radius: 2px; margin-bottom: 1.5rem; }
+    .post-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); color: var(--amarelo); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
+    .post-meta { color: rgba(255,255,255,0.55); font-size: 13px; display: flex; gap: 1.5rem; }
+    .post-body { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
+    .post-body p { font-size: 16px; color: #333; line-height: 1.85; margin-bottom: 1.5rem; }
+    .post-body h2 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--azul); margin: 2.5rem 0 1rem; font-weight: 700; }
+    .post-body blockquote { border-left: 4px solid var(--amarelo); background: #fff; padding: 1.25rem 1.5rem; margin: 2rem 0; border-radius: 0 var(--radius) var(--radius) 0; font-style: italic; color: #444; font-size: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+    .voltar { display: inline-flex; align-items: center; gap: 8px; background: var(--azul); color: var(--amarelo); font-size: 13px; font-weight: 600; padding: 12px 24px; border-radius: 4px; margin-bottom: 3rem; letter-spacing: 1px; transition: opacity 0.2s; }
+    .voltar:hover { opacity: 0.85; }
+    footer { background: var(--azul); border-top: 4px solid var(--verde); }
+    .footer-inner { max-width: 1100px; margin: 0 auto; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+    footer p { color: rgba(255,255,255,0.45); font-size: 12px; }
+    .footer-faixa { display: flex; gap: 5px; }
+    .footer-faixa span { width: 28px; height: 6px; border-radius: 2px; }
+    @media (max-width: 768px) { .nav-links { display: none; } .post-hero { padding: 3rem 1.5rem; } .post-body { padding: 2rem 1.25rem; } }
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <div class="nav-logo-c">C</div>
+        <span class="nav-nome">CLAUDINEI</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#">Política</a></li>
+        <li><a href="#">Brasil</a></li>
+        <li><a href="#">Economia</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="post-hero">
+    <div class="post-hero-inner">
+      <span class="post-category">INFLUÊNCIA</span>
+      <h1>Como construir audiência com propósito</h1>
+      <div class="post-meta">
+        <span>📅 10 mai 2026</span>
+        <span>⏱ 5 min de leitura</span>
+      </div>
+    </div>
+  </section>
+  <div class="post-body">
+    <a href="index.html" class="voltar">← Voltar para o início</a>
+    
+        <p>Todo mundo quer ter mais seguidores. Mas existe uma diferença enorme entre ter seguidores e ter uma audiência. Seguidores são números. Audiência é gente real, que te acompanha, que confia em você, que age quando você fala. E construir isso — de verdade — exige algo que vai além de algoritmos e trends.</p>
+
+        <p>Exige propósito.</p>
+
+        <h2>O erro que a maioria comete</h2>
+
+        <p>A maioria das pessoas que tenta crescer nas redes começa pela pergunta errada: "O que vai viralizar?" E aí fica correndo atrás de tendências, copiando o que está funcionando para os outros, postando sem consistência e sem identidade.</p>
+
+        <p>O resultado é previsível: pode até crescer rápido num momento, mas não sustenta. Porque o público percebe quando não há autenticidade. E quando perde a confiança, não volta.</p>
+
+        <blockquote>"Você pode enganar o algoritmo por um tempo. Mas não dá para enganar pessoas por muito tempo. Autenticidade é o único caminho sustentável."</blockquote>
+
+        <h2>A pergunta certa</h2>
+
+        <p>A pergunta certa não é "o que vai viralizar?" mas sim: "Qual é a minha contribuição?" O que você tem a oferecer que mais ninguém oferece da mesma forma? Qual é a sua experiência, a sua visão, o seu ângulo único sobre o mundo?</p>
+
+        <p>Quando você encontra isso — e começa a comunicar com consistência — acontece algo interessante: as pessoas certas começam a te encontrar. Não milhões aleatórias, mas as pessoas que realmente se identificam com o que você representa. E essas pessoas se tornam uma comunidade.</p>
+
+        <h2>Consistência é o segredo</h2>
+
+        <p>Não existe audiência construída sem consistência. Não dá para postar quando dá vontade e sumir por semanas. O público precisa saber que pode contar com você. Que você vai estar lá, entregando conteúdo de valor, na frequência que prometeu.</p>
+
+        <p>Isso não significa postar todos os dias a qualquer custo. Significa ter um ritmo que você consegue sustentar com qualidade. Um post excelente por semana vale muito mais do que sete posts mediocres.</p>
+
+        <h2>Propósito atrai propósito</h2>
+
+        <p>No final das contas, quem constrói audiência com propósito atrai pessoas com propósito. E uma comunidade engajada em torno de uma causa real é o ativo mais valioso que um influenciador pode ter — mais do que qualquer número de seguidores no perfil.</p>
+        
+    <br/><br/>
+    <a href="index.html" class="voltar">← Voltar para o início</a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Claudinei · Todos os direitos reservados</p>
+      <div class="footer-faixa">
+        <span style="background:#009C3B;"></span>
+        <span style="background:#FFDF00;"></span>
+        <span style="background:#002776;"></span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
